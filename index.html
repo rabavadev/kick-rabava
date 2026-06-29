@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support the Stream</title>
+<meta name="description" content="Support the stream - donations, crypto and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Space+Mono:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="fx" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="avatar" id="avatar"></div>
+      <div class="kicker"><span class="pulse"></span> <span id="kicker">Support the Stream</span></div>
+      <h1 class="name" id="name"></h1>
+      <p class="tagline" id="tagline"></p>
+      <p class="intro" id="intro"></p>
+    </header>
+
+    <div class="ticker" id="ticker" aria-hidden="true"></div>
+
+    <section class="section">
+      <div class="label">Instant Support</div>
+      <div id="support"></div>
+    </section>
+
+    <section class="section">
+      <div class="label">Support with Crypto</div>
+      <div id="crypto"></div>
+    </section>
+
+    <section class="section" id="goalsSection">
+      <div class="label">Current Goals</div>
+      <div id="goals"></div>
+    </section>
+
+    <section class="section">
+      <div class="label">Free Ways to Help</div>
+      <p class="note">Can't donate? These help just as much.</p>
+      <div class="chips" id="free"></div>
+    </section>
+
+    <section class="section">
+      <div class="label">Become a Supporter</div>
+      <div class="impact">
+        <div class="ttl">Every contribution helps me:</div>
+        <ul id="impact"></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="label">Work With Me</div>
+      <div class="sponsor">
+        <h3>Sponsor the Stream</h3>
+        <p>Interested in sponsoring? Let's talk.</p>
+        <div class="tags" id="sponsorTags"></div>
+        <a class="btn primary" id="sponsorBtn" href="#"><span class="ic">&#9993;</span><span>Email me</span><span class="arrow">&rarr;</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="supportersSection">
+      <div class="label">Recent Supporters</div>
+      <div class="wall" id="supporters"></div>
+    </section>
+
+    <footer class="foot">
+      <div class="big">GG <span>&#10084;</span></div>
+      <p>Every bit of support keeps the stream alive.</p>
+    </footer>
+  </main>
+
+  <!-- QR popup (auto-generated from the wallet address) -->
+  <div class="qr-modal" id="qrModal" hidden>
+    <div class="qr-backdrop" data-close></div>
+    <div class="qr-card" role="dialog" aria-modal="true" aria-label="Wallet QR code">
+      <button class="qr-close" data-close aria-label="Close">&times;</button>
+      <div class="qr-title" id="qrTitle"></div>
+      <div class="qr-box" id="qrBox"></div>
+      <div class="qr-addr" id="qrAddr"></div>
+      <button class="qr-copy" id="qrCopy">Copy address</button>
+      <div class="qr-hint">Scan with a wallet app to send</div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
